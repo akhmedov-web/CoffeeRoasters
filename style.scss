@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style-type: none;
+background-color: #FEFCF7;
+    .container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0px 5rem;
+
+        .navbar {
+            height: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .nav {
+                width: 30%;
+                display: flex;
+                justify-content: space-around;
+
+                .navItem {
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    color: #83888F;
+                    list-style-type: none;
+                }
+            }
+        }
+
+        .main {
+            height: 80vh;
+            background-image: url("./images/main.svg");
+            border-radius: 13px;
+            padding: 10px 5rem;
+            display: flex;
+            align-items: center;
+
+            .main_block {
+                width: 35%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                color: #fff;
+
+                .mainTitle {
+                    font-size: 70px;
+                    font-family: 'Fraunces', serif;
+                }
+
+                .mainDesc {
+                    word-spacing: 4px;
+                }
+
+                .mainBtn {
+                    width: 200px;
+                    height: 55px;
+                    border-radius: 6px;
+                    background-color: #0E8784;
+                    outline: none;
+                    border: none;
+                    font-size: 18px;
+                    color: #fff;
+                    font-family: 'Fraunces', serif;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #0e8785a4;
+                        box-shadow: 0px 0px 5px silver;
+                    }
+                }
+            }
+        }
+
+        .collection {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .collectionProducts {
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+                top: -80px;
+
+                .collectionItem {
+                    width: 23%;
+                    text-align: center;
+
+                    .collectionTitle {
+                        font-family: 'Fraunces', serif;
+                        font-size: 27px;
+                    }
+
+                    .collectionDesc {
+                        word-spacing: 7px;
+                    }
+                }
+            }
+        }
+
+        .recommend {
+            height: 105vh;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .recommend_wrapper {
+                width: 100%;
+                height: 80%;
+                position: absolute;
+                background-color: #333D4B;
+                z-index: -1;
+            }
+
+            .recommend_content {
+                text-align: center;
+                width: 40%;
+                margin: 3rem 0px;
+
+                .recommendTitle {
+                    font-size: 40px;
+                }
+            }
+
+            .recommandCards {
+                height: 55%;
+                display: flex;
+                justify-content: space-around;
+                padding: 0px 4rem;
+
+                .recommandCard {
+                    width: 30%;
+                    height: 100%;
+                    border-radius: 12px;
+                    background-color: #0E8784;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 10px 35px;
+                    text-align: center;
+                    box-sizing: border-box;
+
+                    h4 {
+                        font-size: 22px;
+                        font-family: 'Fraunces', serif;
+                        margin-top: 50px;
+                        margin-bottom: 2px;
+                    }
+
+                    p {
+                        word-spacing: 2px;
+                    }
+                }
+            }
+        }
+
+        .plan {
+            height: 100vh;
+            padding: 0px 6rem;
+            h3{
+                color:#83888F;
+                font-weight: 800;
+                font-family: sans-serif;
+            }
+            .stepper{
+                width: 73%;
+                margin:2rem 0px;
+            }
+            .planCards{
+                height: 55%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .planCard{
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items:flex-start;
+                    .planNumber{
+                        font-size: 55px;
+                        font-family: 'Fraunces', serif;
+                        color:#FDD6BA;
+                    }
+                    .planTitle{
+                        font-size: 47px;
+                        font-family: 'Fraunces', serif;
+                        color:#333D4B;
+                    }
+                    p{
+                        font-size: 17px;
+                        word-spacing: 3px;
+                    }
+                }
+            }
+            .planBtn{
+                    width: 200px;
+                    height: 55px;
+                    border-radius: 7px;
+                    background-color: #0E8784;
+                    outline: none;
+                    border: none;
+                    font-size: 18px;
+                    color: #fff;
+                    font-family: 'Fraunces', serif;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #0e8785a4;
+                        box-shadow: 0px 0px 5px silver;
+                    }
+            }
+        }
+
+        .footer {
+            height: 110px;
+            background-color: #333D4B;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 70px;
+
+            .footerItems {
+                width: 30%;
+                display: flex;
+                justify-content: space-around;
+
+                .footerItem {
+                    list-style-type: none;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    color: #83888F;
+
+                    &:hover {
+                        color: #fff;
+                        transition: all 0.2s ease-in-out;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .socialBrands {
+                width: 20%;
+                text-align: center;
+
+                i {
+                    font-size: 30px;
+                    margin: 10px;
+                    color: #fff;
+
+                    &:hover {
+                        color: #83888F;
+                        transition: all 0.2s ease-in-out;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

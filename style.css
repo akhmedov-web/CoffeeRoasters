@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style-type: none;
+  background-color: #FEFCF7;
+}
+body .container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 5rem;
+}
+body .container .navbar {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .container .navbar .nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+body .container .navbar .nav .navItem {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #83888F;
+  list-style-type: none;
+}
+body .container .main {
+  height: 80vh;
+  background-image: url("./images/main.svg");
+  border-radius: 13px;
+  padding: 10px 5rem;
+  display: flex;
+  align-items: center;
+}
+body .container .main .main_block {
+  width: 35%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+}
+body .container .main .main_block .mainTitle {
+  font-size: 70px;
+  font-family: "Fraunces", serif;
+}
+body .container .main .main_block .mainDesc {
+  word-spacing: 4px;
+}
+body .container .main .main_block .mainBtn {
+  width: 200px;
+  height: 55px;
+  border-radius: 6px;
+  background-color: #0E8784;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  font-family: "Fraunces", serif;
+  cursor: pointer;
+}
+body .container .main .main_block .mainBtn:hover {
+  background-color: rgba(14, 135, 133, 0.6431372549);
+  box-shadow: 0px 0px 5px silver;
+}
+body .container .collection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .container .collection .collectionProducts {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: -80px;
+}
+body .container .collection .collectionProducts .collectionItem {
+  width: 23%;
+  text-align: center;
+}
+body .container .collection .collectionProducts .collectionItem .collectionTitle {
+  font-family: "Fraunces", serif;
+  font-size: 27px;
+}
+body .container .collection .collectionProducts .collectionItem .collectionDesc {
+  word-spacing: 7px;
+}
+body .container .recommend {
+  height: 105vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container .recommend .recommend_wrapper {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  background-color: #333D4B;
+  z-index: -1;
+}
+body .container .recommend .recommend_content {
+  text-align: center;
+  width: 40%;
+  margin: 3rem 0px;
+}
+body .container .recommend .recommend_content .recommendTitle {
+  font-size: 40px;
+}
+body .container .recommend .recommandCards {
+  height: 55%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 4rem;
+}
+body .container .recommend .recommandCards .recommandCard {
+  width: 30%;
+  height: 100%;
+  border-radius: 12px;
+  background-color: #0E8784;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 35px;
+  text-align: center;
+  box-sizing: border-box;
+}
+body .container .recommend .recommandCards .recommandCard h4 {
+  font-size: 22px;
+  font-family: "Fraunces", serif;
+  margin-top: 50px;
+  margin-bottom: 2px;
+}
+body .container .recommend .recommandCards .recommandCard p {
+  word-spacing: 2px;
+}
+body .container .plan {
+  height: 100vh;
+  padding: 0px 6rem;
+}
+body .container .plan h3 {
+  color: #83888F;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+body .container .plan .stepper {
+  width: 73%;
+  margin: 2rem 0px;
+}
+body .container .plan .planCards {
+  height: 55%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body .container .plan .planCards .planCard {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+body .container .plan .planCards .planCard .planNumber {
+  font-size: 55px;
+  font-family: "Fraunces", serif;
+  color: #FDD6BA;
+}
+body .container .plan .planCards .planCard .planTitle {
+  font-size: 47px;
+  font-family: "Fraunces", serif;
+  color: #333D4B;
+}
+body .container .plan .planCards .planCard p {
+  font-size: 17px;
+  word-spacing: 3px;
+}
+body .container .plan .planBtn {
+  width: 200px;
+  height: 55px;
+  border-radius: 7px;
+  background-color: #0E8784;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  font-family: "Fraunces", serif;
+  cursor: pointer;
+}
+body .container .plan .planBtn:hover {
+  background-color: rgba(14, 135, 133, 0.6431372549);
+  box-shadow: 0px 0px 5px silver;
+}
+body .container .footer {
+  height: 110px;
+  background-color: #333D4B;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 70px;
+}
+body .container .footer .footerItems {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+body .container .footer .footerItems .footerItem {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #83888F;
+}
+body .container .footer .footerItems .footerItem:hover {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+body .container .footer .socialBrands {
+  width: 20%;
+  text-align: center;
+}
+body .container .footer .socialBrands i {
+  font-size: 30px;
+  margin: 10px;
+  color: #fff;
+}
+body .container .footer .socialBrands i:hover {
+  color: #83888F;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
